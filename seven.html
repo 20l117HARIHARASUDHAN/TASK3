@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 7</title>
+</head>
+<body>
+    <h3>1</h3>: </h3>    
+    <p id="demo1"> </p> 
+    <h3>2:</h3>   
+    <p id="demo2"> </p>   
+    <h3>3:</h3>    
+    <p id="demo3"> </p>    
+    <h3>4:</h3>    
+    <p id="demo4"> </p>  
+    <h3>5:</h3>    
+    <p id="demo5"> </p>  
+
+    <h3>6:</h3>    
+    <p id="demo6"> </p>  
+    <h3>7:</h3>    
+    <p id="demo7"> </p>  
+
+    <h3>8:</h3>    
+    <p id="demo8"> </p>  
+    <h3>9:</h3>    
+    <p id="demo9"> </p>  
+
+    <script>
+   let people = ["Greg", "Mary", "Devon", "James"];
+   let c="<ul> </ul>";
+   for(let i=0;i<people.length;i++){
+    c+=people[i]+"<br>";
+   }
+   document.getElementById("demo1").innerHTML=c;
+
+   people.shift();
+   document.getElementById("demo2").innerHTML=people;
+
+     people.pop();
+   document.getElementById("demo3").innerHTML=people;
+
+   people.unshift("Matt"); 
+   document.getElementById("demo4").innerHTML=people;
+
+   people.push("sudhan"); 
+   document.getElementById("demo5").innerHTML=people;
+
+   let j='';
+   for(let i=0;i<people.length;i++){
+    if(people[i]=="Mary")
+    {
+        break;
+    }
+     j=people[i]+"<br>";
+   }
+   document.getElementById("demo6").innerHTML=j;
+
+   let copa=people.slice(1);
+   document.getElementById("demo7").innerHTML=copa;
+
+   document.getElementById("demo8").innerHTML=people.indexOf("Mary");
+   document.getElementById("demo9").innerHTML=people.indexOf("Foo");
+    </script>
+</body>
+</html>

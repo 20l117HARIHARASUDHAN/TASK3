@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 2</title>
+</head>
+<body>
+    <h3> original array </h3>
+    <p id="demo0"></p>
+    <h3>A: </h3>
+    <p id="demo1"></p>
+    <h3>B: </h3>
+    <p id="demo2"></p>
+    <h3>C: </h3>
+    <p id="demo3"></p>
+    <h3>D: </h3>
+    <p id="demo4"></p>
+    <h3>E: </h3>
+    <p id="demo5"><ul> </ul></p>
+    <script>
+        let  cargoHold=['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+        document.getElementById("demo0").innerHTML = cargoHold;
+        cargoHold[5]='space tether';
+        document.getElementById("demo1").innerHTML = cargoHold;
+        
+         cargoHold.pop();
+         document.getElementById("demo2").innerHTML = cargoHold;
+
+         cargoHold.shift();
+         document.getElementById("demo3").innerHTML = cargoHold;
+
+         cargoHold.unshift(1138);
+         cargoHold.push( '20 meters');
+         document.getElementById("demo4").innerHTML = cargoHold;
+    let c="<ul> </ul>";
+          for(let i=0;i<cargoHold.length;i++){
+            
+           c+= "<li>"+" > "+cargoHold[i] +"</li>"+"<br>" ;
+          }
+          document.getElementById("demo5").innerHTML=c;
+    </script>
+</body>
+</html>

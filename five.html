@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 5</title>
+</head>
+<body>
+    <h3>A: </h3>
+    
+    <p>str.split()</p>
+    <p id="demo01"> </p>
+    <p>str.split('e') </p>
+    <p id="demo02"> </p>
+    <p>str.split(' ')</p>
+    <p id="demo03"> </p>
+    <p> str.split('')</p>
+    <p id="demo04"> </p>
+    <h3>B:</h3>
+    <p> Any separator can be specified in (). The default is comma (,).</p>
+    <p>str.join()</p>
+    <p id="demo11"> </p>
+    <p>str.join('a') </p>
+    <p id="demo12"> </p>
+    <p>str.join(' ')</p>
+    <p id="demo13"> </p>
+    <p> str.join('')</p>
+    <p id="demo14"> </p>
+    
+    <h3>C:</h3>
+   <p>as a string: </p>
+    <p id="demo3"> it will not change</p>
+    
+    <script>
+    let str = 'In space, no one can hear you code.';
+    let str1=str.split();
+    document.getElementById("demo01").innerHTML=str1;
+    document.getElementById("demo02").innerHTML=str.split('e');
+    document.getElementById("demo03").innerHTML=str.split(' ');
+    document.getElementById("demo04").innerHTML=str.split('');
+
+
+    let arr = ['B', 'n', 'n', 5];
+    
+    document.getElementById("demo11").innerHTML=arr.join();
+    document.getElementById("demo12").innerHTML=arr.join('a');
+    document.getElementById("demo13").innerHTML=arr.join(' ');
+    document.getElementById("demo14").innerHTML=arr.join('');
+
+    let f=['benefit', 'cadet']
+    let l=['water','space suits','food','plasma sword','batteries'];
+    let v=f.join(' ')+l.join(' ');
+    document.getElementById("demo3").innerHTML=v;
+    </script>
+</body>
+</html>

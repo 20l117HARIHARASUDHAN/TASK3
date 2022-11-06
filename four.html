@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 4</title>
+</head>
+<body>
+    <h3>A: </h3>
+    <p>concat will not affect the arrays it creates new array </p> 
+    <p id="demo1"> </p>
+    <p id="demo01"> </p>
+    <h3>B:</h3>
+    <p>slice will not affect the arrays it create new array</p>
+    <p id="demo2"></p>
+    <p id="demo02"></p>
+    <h3>C:</h3>
+    <p>reverse and sort will affect the arrays it creates new array </p> 
+    sort: <br>
+    <p id="demo3"></p>
+    reverse: <br>
+    <p id="demo03"></p>
+    <script>
+    let holdCabinet1 =['duct tabe','gum',3.14,false,6.022e23];
+    let holdCabinet2 =['orange drink','nerf toys','camera',42,'parsnip'];
+    let oneandtwo=holdCabinet1.concat(holdCabinet2);
+    document.getElementById("demo1").innerHTML=oneandtwo;//concat will not affect the arrays it create new array
+    document.getElementById("demo01").innerHTML=holdCabinet1;
+    
+    let dub=holdCabinet1.slice(0,2);
+    let dub2=holdCabinet2.slice(0,2);
+    document.getElementById("demo2").innerHTML=dub;
+    document.getElementById("demo02").innerHTML=dub2;
+
+    holdCabinet1.sort();
+    document.getElementById("demo3").innerHTML=holdCabinet1;
+
+    holdCabinet2.reverse();
+    document.getElementById("demo03").innerHTML=holdCabinet2;
+    </script>
+</body>
+</html>

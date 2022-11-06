@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 3</title>
+</head>
+<body>
+    <h3>A:</h3>
+    <p id="demo1"></p>
+    <h3>B:</h3>
+    <p id="demo2"></p>
+    <h3>C:</h3>
+    <p id="demo3"></p>
+    <script>
+     let cargoHold=  [1138,'space suits','parrot','instruction manual','meal packs','space tether','20 meters'];
+      cargoHold.splice(3, 0, "keys");
+       document.getElementById("demo1").innerHTML = cargoHold;
+       cargoHold.indexOf(4);
+
+       let i=cargoHold.indexOf('instruction manual');
+       delete cargoHold[i];
+       document.getElementById("demo2").innerHTML = cargoHold;
+
+       cargoHold[2]='cat'; cargoHold[3]='fob'; cargoHold[4]='string cheese';
+       document.getElementById("demo3").innerHTML = cargoHold;
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 1</title>
+</head>
+<body>
+    <h3>A: </h3>
+    <p id="demo"> </p><br>
+    <h3>B: </h3>
+    <p id="demo1"> </p><br>
+    <h3>C: </h3>
+    <p id="demo2"> </p><br>
+
+    </p>
+    <script>
+        let practiceFile=[273,15];
+        let a=prompt("enter the a element");
+       
+        practiceFile.push(a);
+        document.getElementById("demo").innerHTML = practiceFile;
+        let b=prompt("enter the b element");
+        practiceFile.push(b);
+        document.getElementById("demo1").innerHTML = practiceFile;
+        
+       let sp=prompt("enter the three element separated by ,");
+       let ar=sp.split(',');
+       
+      practiceFile= practiceFile.concat(ar);
+        document.getElementById("demo2").innerHTML = practiceFile;
+ 
+    </script>
+</body>
+</html>
